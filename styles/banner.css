@@ -1,0 +1,130 @@
+.banner {
+    padding: 45px 0 30px 0;
+    border-radius: 16px;
+
+}
+
+.banner.container {
+    padding: 145px 112px 49px 112px;
+    background-image: url("../img/banner/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-weight: 700;
+}
+
+.banner__title {
+    margin-bottom: 100px;
+    font-size: 70px;
+    line-height: 91px;
+}
+
+.banner__promo {
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.banner__info {
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.banner__info--big {
+    display: inline-block;
+    margin-right: 6px;
+    margin-left: 30px;
+    font-size: 60px;
+    line-height: 78px;
+}
+
+@media (max-width:1024px) {
+
+    .banner {
+        padding: 30px 0 11px 0;
+    }
+
+    .banner.container {
+        padding: 80px 80px 36px 80px;
+        font-size: 40px;
+
+    }
+
+    .banner__title {
+        margin-bottom: 63px;
+        font-size: 70px;
+        line-height: 52px;
+    }
+
+    .banner__info {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .banner__info--big {
+        margin-right: 5px;
+        margin-left: 20px;
+        font-size: 40px;
+        line-height: 52px;
+    }
+}
+
+@media (max-width:768px) {
+    .banner {
+        padding: 25px 0 20px 0;
+    }
+
+    .banner.container {
+        padding: 64px 80px 30px 80px;
+        font-size: 16px;
+    }
+
+    .banner__title {
+        margin-bottom: 82px;
+        font-size: 30px;
+        line-height: 39px;
+    }
+
+    .banner__info {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .banner__info--big {
+        margin-right: 3px;
+        margin-left: 10px;
+        font-size: 30px;
+        line-height: 39px;
+    }
+}
+
+@media (max-width: 320px) {
+    .banner {
+        padding: 20px 0 10px 0;
+    }
+
+    .banner.container {
+        padding: 50px 29px 30px 29px;
+        font-size: 12px;
+        background-image: url("../img/banner/banner-320.png");
+    }
+
+    .banner__title {
+        margin-bottom: 189px;
+        font-size: 22px;
+        line-height: 29px;
+    }
+
+    .banner__info {
+        font-size: 8px;
+        margin-bottom: 6px;
+    }
+
+    .banner__info--big {
+        margin-right: 2px;
+        margin-left: 8px;
+        font-size: 20px;
+        line-height: 26px;
+    }
+}

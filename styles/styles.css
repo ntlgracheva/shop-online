@@ -1,0 +1,50 @@
+@import url(normalize.css);
+@import url(global-styles.css);
+@import url(var.css);
+
+@import url(header.css);
+@import url(banner.css);
+@import url(promo.css);
+
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/lato-regular.woff) format("woff"),
+        url(../fonts/lato-regular.woff2) format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/lato-bold.woff) format("woff"),
+        url(../fonts/lato-bold.woff2) format("woff2");
+    font-weight: 700;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: var(--color-white);
+}
+
+.container {
+    max-width: 1770px;
+    margin: 0 auto;
+}
+
+@media (max-width:1024px){
+    .container {
+        max-width: 940px;
+    }  
+}
+
+@media (max-width:768px){
+    .container {
+        max-width: 700px;
+    }  
+}
+
+@media (max-width: 320px){
+    .container {
+        max-width: 280px;
+    } 
+}

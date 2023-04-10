@@ -1,0 +1,540 @@
+.promo {
+    padding: 30px 0 140px 0;
+}
+
+.promo__list {
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: 245px 245px 550px 245px 245px;
+    grid-template-rows: 228px 228px 211px 245px;
+    gap: 60px;
+}
+
+.promo__card {
+    position: relative;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 39px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.promo__card:hover {
+    scale: 1.05;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.25s linear;
+}
+
+.circle-promo {
+    display: block;
+    position: absolute;
+    width: 88px;
+    height: 88px;
+    line-height: 88px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--color-yellow);
+}
+
+.circle-promo.postiion-bottom {
+    right: 20px;
+    bottom: 27px;
+}
+
+.circle-promo.postiion-top {
+    left: 20px;
+    top: 27px;
+}
+
+.promo__card.item-01 {
+    height: 245px;
+    grid-column: 1/2;
+    padding: 90px 35px 27px 20px;
+    background-image: url("../img/promo/promo-1.png");
+}
+
+.promo__card.item-01 .bold {
+    font-size: 40px;
+}
+
+.promo__card.item-02 {
+    height: 245px;
+    grid-column: 2/3;
+    padding: 77px 25px 129px 14px;
+    background-image: url("../img/promo/promo-2.png");
+}
+
+.promo__card.item-03 {
+    width: 516px;
+    margin-left: auto;
+    grid-column: 3/4;
+    grid-row: 1/3;
+    padding: 329px 20px 20px 20px;
+    background-image: url("../img/promo/promo-3.png");
+}
+
+.promo__card.item-03 .promo__text {
+    height: 100%;
+    font-size: 40px;
+    line-height: 58px;
+    padding: 24px 20px;
+    border-radius: 20px;
+    background-color: #38c0eb;
+}
+
+.promo__card.item-03 .bold {
+    font-size: 56px;
+}
+
+.promo__card.item-04 {
+    grid-column: 4/6;
+    grid-row: 1/2;
+    padding: 94px 180px 30px 30px;
+    font-size: 40px;
+    line-height: 52px;
+    background-image: url("../img/promo/promo-4.png");
+}
+
+.promo__card.item-05 {
+    grid-column: 4/6;
+    grid-row: 2/3;
+    padding: 136px 147px 40px 30px;
+    font-size: 40px;
+    line-height: 52px;
+    background-image: url("../img/promo/promo-5.png");
+}
+
+.promo__card.item-06 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    background-image: url("../img/promo/promo-6.png");
+}
+
+
+.promo__card.item-07 {
+    grid-column: 1/4;
+    grid-row: 3/5;
+    padding: 358px 467px 50px 50px;
+    background-image: url("../img/promo/promo-7.png");
+}
+
+.promo__card.item-07 .promo__text {
+    background-color: var(--color-white);
+    border-radius: 20px;
+    padding: 30px 40px;
+    color: var(--color-red);
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.promo__card.item-08 {
+    grid-column: 4/5;
+    grid-row: 3/5;
+    background-image: url("../img/promo/promo-8.png");
+}
+
+.promo__card.item-09 {
+    height: 245px;
+    grid-column: 5/6;
+    grid-row: 3/4;
+    padding: 130px 48px 37px 20px;
+    background-image: url("../img/promo/promo-9.png");
+}
+
+.promo__card.item-10 {
+    grid-column: 5/6;
+    grid-row: 4/5;
+    background-image: url("../img/promo/promo-10.png");
+}
+
+
+@media (max-width:1024px) {
+    .promo {
+        padding: 30px 0 100px 0;
+    }
+
+    .promo__card {
+        font-size: 20px;
+    }
+
+    .circle-promo {
+        font-size: 30px;
+    }
+
+    .promo__list {
+        grid-template-columns: 217px 217px 220px 196px;
+        grid-template-rows: 196px 214px 186px 218px 418px;
+        gap: 30px;
+    }
+
+    .circle-promo.postiion-bottom {
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .circle-promo.postiion-top {
+        left: 10px;
+        top: 17px;
+    }
+
+    .promo__card.item-01 {
+        height: 202px;
+        grid-column: 1/2;
+        padding: 101px 3px 32px 9px;
+        background-image: url("../img/promo/promo-1.png");
+    }
+
+    .promo__card.item-01 .bold {
+        font-size: 30px;
+    }
+
+
+    .promo__card.item-02 {
+        height: 202px;
+        grid-column: 2/3;
+        padding: 54px 28px 117px 9px;
+    }
+
+    .promo__card.item-03 {
+        grid-column: 3/5;
+        width: 100%;
+        height: 446px;
+        margin-left: 0;
+        padding: 283px 20px 20px 20px;
+    }
+
+    .promo__card.item-03 .promo__text {
+        height: 100%;
+        font-size: 30px;
+        line-height: 36px;
+        padding: 25px;
+    }
+
+    .promo__card.item-03 .bold {
+        font-size: 40px;
+    }
+
+    .promo__card.item-04 {
+        grid-column: 1/3;
+        grid-row: 3/4;
+        height: 194px;
+        padding: 89px 179px 27px 30px;
+        font-size: 30px;
+        line-height: 39px;
+    }
+
+    .promo__card.item-05 {
+        grid-column: 1/3;
+        grid-row: 4/5;
+        height: 194px;
+        padding: 119px 154px 36px 30px;
+        font-size: 30px;
+        line-height: 39px;
+    }
+
+    .promo__card.item-06 {
+        height: 220px;
+    }
+
+    .promo__card.item-07 {
+        grid-column: 1/5;
+        grid-row: 5/6;
+        padding: 296px 395px 39px 30px;
+        background-image: url("../img/promo/promo-7.png");
+    }
+
+    .promo__card.item-07 .promo__text {
+        padding: 24px 47px;
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .promo__card.item-08 {
+        grid-column: 3/4;
+        height: 410px;
+    }
+
+    .promo__card.item-09 {
+        height: auto;
+        grid-column: 4/5;
+        grid-row: 3/4;
+        padding: 151px 2px 19px 4px;
+    }
+
+    .promo__card.item-09 .promo__text {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .promo__card.item-10 {
+        grid-column: 4/5;
+        grid-row: 4/5;
+        height: 196px;
+    }
+
+}
+
+@media (max-width:768px) {
+    .promo {
+        padding: 25px 0 80px 0;
+    }
+
+    .circle-promo {
+        font-size: 16px;
+    }
+
+    .promo__list {
+        grid-template-columns: 150px 150px 253px 83px;
+        grid-template-rows: 130px 126px 80px 24px 23px 81px 337px;
+        gap: 20px 22px;
+    }
+
+    .circle-promo {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .circle-promo.postiion-top {
+        left: 10px;
+        top: 10px;
+    }
+
+    .promo__card.item-01 {
+        height: auto;
+        margin-right: 10px;
+        padding: 43px 3px 15px 10px;
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .promo__card.item-01 .bold {
+        font-size: 27px;
+    }
+
+    .promo__card.item-02 {
+        height: auto;
+        margin-left: 10px;
+        padding: 15px 15px 94px 5px;
+        font-size: 16px;
+    }
+
+    .promo__card.item-03 {
+        height: auto;
+        grid-column: 3/5;
+        grid-row: 1/4;
+        padding: 309px 10px 10px 10px;
+    }
+
+    .promo__card.item-03 .promo__text {
+        font-size: 16px;
+        line-height: 18px;
+        padding: 16px 20px 16px 16px;
+        border-radius: 12px;
+    }
+
+    .promo__card.item-03 .bold {
+        font-size: 26px;
+        line-height: 29px;
+    }
+
+    .promo__card.item-04 {
+        height: auto;
+        grid-row: 3/5;
+        padding: 70px 143px 18px 21px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .promo__card.item-05 {
+        grid-row: 5/7;
+        height: auto;
+        padding: 87px 130px 20px 21px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .promo__card.item-06 {
+        height: auto;
+    }
+
+    .promo__card.item-07 {
+        grid-row: 7/8;
+        padding: 243px 327px 26px 26px;
+    }
+
+    .promo__card.item-07 .promo__text {
+        padding: 22px 33px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .promo__card.item-08 {
+        grid-row: 4/7;
+        height: auto;
+        background-image: url(../img/promo/promo-8-768.png);
+    }
+
+    .promo__card.item-09 {
+        height: 83px;
+        grid-row: 4/7;
+        padding: 44px 7px 11px 3px;
+    }
+
+    .promo__card.item-09 .promo__text {
+
+        font-size: 12px;
+        line-height: 14.4px;
+    }
+
+    .promo__card.item-10 {
+        grid-row: 6/7;
+        height: auto;
+    }
+
+    .promo__card.item-09 .circle-promo {
+        height: 36px;
+        width: 36px;
+        left: 3px;
+        top: 3px;
+        font-size: 12px;
+        line-height: 36px;
+    }
+}
+
+
+@media (max-width: 320px) {
+
+    .promo {
+        padding: 10px 0 70px 0;
+    }
+
+    .promo__list {
+
+        grid-template-columns: 130px 130px;
+        grid-template-rows: 130px 118px 280px 118px 118px 130px 130px 123px;
+        gap: 20px;
+    }
+
+    .promo__card {
+        font-size: 12px;
+        line-height: 14.4px;
+        border-radius: 8px;
+    }
+
+    .circle-promo {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+    }
+
+    .circle-promo.postiion-bottom {
+        right: 5px;
+        bottom: 5px;
+    }
+
+    .circle-promo.postiion-top {
+        left: 5px;
+        top: 5px;
+    }
+
+    .promo__card.item-01 {
+        height: auto;
+        grid-column: 1/2;
+        padding: 76px 55px 10px 10px;
+        font-size: 12px;
+        line-height: 13px;
+        margin-right: 0;
+    }
+
+    .promo__card.item-01 .bold {
+        font-size: 12px;
+        font-weight: 700;
+
+    }
+
+    .promo__card.item-02 {
+        height: auto;
+        padding: 28px 37px 86px 10px;
+        font-size: 12px;
+        margin-left: 0;
+    }
+
+    .promo__card.item-03 {
+        grid-column: 1/3;
+        grid-row: 3/4;
+        padding: 234px 10px 10px 10px;
+    }
+
+    .promo__card.item-03 .promo__text {
+        font-size: 12px;
+        line-height: 13px;
+        padding: 10px 25px;
+    }
+
+    .promo__card.item-03 .bold {
+        font-size: 16px;
+        line-height: 13px;
+    }
+
+    .promo__card.item-04 {
+        grid-column: 1/3;
+        grid-row: 4/5;
+        padding: 88px 89px 16px 10px;
+        font-size: 12px;
+    }
+
+    .promo__card.item-05 {
+        height: auto;
+        grid-column: 1/3;
+        grid-row: 5/6;
+        padding: 88px 150px 16px 10px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .promo__card.item-06 {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    .promo__card.item-07 {
+        grid-column: 1/3;
+        grid-row: 8/9;
+        padding: 83px 15px 10px 15px;
+    }
+
+    .promo__card.item-07 .promo__text {
+        border-radius: 8px;
+        padding: 10px 41px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .promo__card.item-08 {
+        height: auto;
+        grid-column: 1/2;
+        grid-row: 6/8;
+        background-image: url("../img/promo/promo-8.png");
+    }
+
+    .promo__card.item-09 {
+        height: auto;
+        grid-column: 2/3;
+        grid-row: 6/7;
+        padding: 106px 10px 10px 10px;
+        background-image: url("../img/promo/promo-9.png");
+    }
+
+    .promo__card.item-10 {
+        grid-column: 2/3;
+        grid-row: 7/8;
+    }
+
+}

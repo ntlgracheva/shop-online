@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Предзагрузка шрифтов-->
+    <link rel="preload" href="fonts/lato-regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/lato-bold.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="preload" href="fonts/lato-bold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/lato-bold.woff2" as="font" type="font/woff2" crossorigin>
+
+
+
+    <!--Подключение стилей-->
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Shop Online</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navigation">
+                <a href="index.html" class="navigation__logo-home"><img src="img/header/logo.png" alt="Logo"></a>
+
+                <button class="nav__menu-button">
+                    <svg width="24" height="24" viewbox="0 0 24 24" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2900_14)">
+                            <path d="M3 18H9V16H3V18ZM3 6V8H21V6H3ZM3 13H15V11H3V13Z" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_2900_14">
+                                <rect width="24" height="24" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                    Меню</button>
+
+                <label for="search" class="search__label">
+                    <input type="text" name="search" class="search__input" placeholder="Я ищу...">
+                    <button class="search__button">
+                        <svg width="36" height="36" viewbox="0 0 36 36" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2900_7)">
+                                <path
+                                    d="M23.25 21H22.065L21.645 20.595C23.115 18.885 24 16.665 24 14.25C24 8.865 19.635 4.5 14.25 4.5C8.865 4.5 4.5 8.865 4.5 14.25C4.5 19.635 8.865 24 14.25 24C16.665 24 18.885 23.115 20.595 21.645L21 22.065V23.25L28.5 30.735L30.735 28.5L23.25 21ZM14.25 21C10.515 21 7.5 17.985 7.5 14.25C7.5 10.515 10.515 7.5 14.25 7.5C17.985 7.5 21 10.515 21 14.25C21 17.985 17.985 21 14.25 21Z" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2900_7">
+                                    <rect width="36" height="36" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                </label>
+
+                <ul class="profile-menu">
+                    <li class="profile-menu__link link-profile"><a href="#">
+                            <svg width="24" height="24" viewbox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 12C15.315 12 18 9.315 18 6C18 2.685 15.315 0 12 0C8.685 0 6 2.685 6 6C6 9.315 8.685 12 12 12ZM12 15C7.995 15 0 17.01 0 21V24H24V21C24 17.01 16.005 15 12 15Z" />
+                            </svg>
+                            <span class="hidden-320">Профиль</span>
+                        </a></li>
+                    <li class="profile-menu__link link-basket"><a href="#">
+                            <svg width="31" height="30" viewbox="0 0 31 30" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.5 24C7.85 24 6.515 25.35 6.515 27C6.515 28.65 7.85 30 9.5 30C11.15 30 12.5 28.65 12.5 27C12.5 25.35 11.15 24 9.5 24ZM0.5 0V3H3.5L8.9 14.385L6.875 18.06C6.635 18.48 6.5 18.975 6.5 19.5C6.5 21.15 7.85 22.5 9.5 22.5H27.5V19.5H10.13C9.92 19.5 9.755 19.335 9.755 19.125L9.8 18.945L11.15 16.5H22.325C23.45 16.5 24.44 15.885 24.95 14.955L30.32 5.22C30.44 5.01 30.5 4.755 30.5 4.5C30.5 3.675 29.825 3 29 3H6.815L5.405 0H0.5ZM24.5 24C22.85 24 21.515 25.35 21.515 27C21.515 28.65 22.85 30 24.5 30C26.15 30 27.5 28.65 27.5 27C27.5 25.35 26.15 24 24.5 24Z" />
+                            </svg><span class="hidden-320">Корзина</span>
+                        </a></li>
+                    <li class="profile-menu__link link-favorite"><a href="#">
+                            <svg width="30" height="29" viewbox="0 0 30 29" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15 28.025L12.825 26.045C5.1 19.04 0 14.42 0 8.75C0 4.13 3.63 0.5 8.25 0.5C10.86 0.5 13.365 1.715 15 3.635C16.635 1.715 19.14 0.5 21.75 0.5C26.37 0.5 30 4.13 30 8.75C30 14.42 24.9 19.04 17.175 26.06L15 28.025Z" />
+                            </svg>
+                            <span class="hidden-320">Избранное</span>
+                        </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <secion class="banner">
+            <div class="banner container">
+                <p class="banner__title">-50% на все ноутбуки</p>
+                <p class="banner__promo">До конца акции:</p>
+                <p class="banner__info">
+                    <span class="banner__info--big">3</span>дня
+                    <span class="banner__info--big">8</span>часов
+                    <span class="banner__info--big">43</span>минуты
+                </p>
+            </div>
+        </secion>
+
+        <section class="promo">
+            <div class="container">
+                <ul class="promo__list">
+                    <li class="promo__card item-01">
+                        <p class="promo__text"><span class="bold">Книга</span> – лучший подарок</p>
+                    </li>
+
+                    <li class="promo__card item-02">
+                        <p class="promo__text">Время скидок!</p><span class="circle-promo postiion-bottom">-25%</span>
+                    </li>
+
+                    <li class="promo__card item-03">
+                        <p class="promo__text">Вторая пара кроссовок
+                            <span class="bold">в подарок!</span>
+                        </p>
+                    </li>
+
+                    <li class="promo__card item-04">
+                        <p class="promo__text">Идеи новогодних
+                            подарков</p>
+                    </li>
+
+                    <li class="promo__card item-05">
+                        <p class="promo__text">Выгодно в декабре!</p><span
+                            class="circle-promo postiion-bottom">-15%</span>
+                    </li>
+
+                    <li class="promo__card item-06">
+                        <span class="circle-promo postiion-top">-40%</span>
+                    </li>
+
+                    <li class="promo__card item-07">
+                        <p class="promo__text">Новогодние украшения</p>
+                    </li>
+
+                    <li class="promo__card item-08"><span class="circle-promo postiion-bottom">-55%</span></li>
+                    
+                    <li class="promo__card item-09">
+                        <p class="promo__text">На бытовую химию</p><span class="circle-promo postiion-top">-25%</span>
+                    </li>
+                    <li class="promo__card item-10"></li>
+                </ul>
+
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
